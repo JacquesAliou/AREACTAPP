@@ -1,39 +1,125 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+:root {
+  --color-131921: #131921;
+  --color-3b4149: #3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-ffffff: #ffffff;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
 }
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* Hearder Start */
+.header-top-strip {
+  border-bottom: 1px solid var(--color-3b4149);
+  background-color: var(--color-131921);
+}
+.header-upper {
+  background-color: var(--color-131921);
+}
+.header-upper .input-group-text {
+  background-color: var(--color-febd69);
+}
+.dropdown button {
+  color: var(--color-ffffff);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400px;
+  letter-spacing: 0.3;
+  text-transform: uppercase;
+}
+.dropdown-menu {
+  width: 250px;
+}
+/* Header End */
 
-.App-header {
-  min-height: 100vh;
+/* Start of Footer */
+footer {
+  background-color: var(--color-232f3e);
+}
+ul li a,
+.text-uppercase {
+  /* Align les liens et H6 de footer verticalement */
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+/* End of Footer */
+
+/*Start of Body */
+.img-fluid {
+  width: 500px;
+}
+.main-banner-content {
+  top: 2%;
+  left: 1%;
+}
+.small-banner img {
+  width: 200px;
+}
+.card {
+  border-radius: 8px;
+  border: 1px solid #cccccc;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 5px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  transition: all linear 200ms;
 }
-
-.App-link {
-  color: rgb(112, 76, 182);
+.card:hover {
+  transform: scale(1.1);
+  transition: all linear 200ms;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.card img {
+  width: 200px;
 }
+.button {
+  background-color: var(--color-232f3e);
+  color: white;
+  padding: 13px 33px;
+  font-size: 14px;
+  border-radius: 15px;
+}
+.button:hover {
+  background-color: var(--bs-orange);
+  color: var(--bs-gray-dark);
+}
+/*End of Body */
